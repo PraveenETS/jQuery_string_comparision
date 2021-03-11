@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <div class="mother  text-center  ">
+        <div class="hedding text-center bg-info text-white">
+            <h2>Diff Comparator</h2>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-4 p-3">
+              Type the original text here
+              <textarea id="original_text" name="original_text" rows="10" cols="50" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
+            </div>
+            <div class="col-4 p-3">
+              Type the text to be compared
+              <textarea id="comp_text" name="comp_text" rows="10" cols="50" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
+            </div>
+        </div> 
+
+        <br>
+        <div class="btnn">
+            <button type="button" id="btn_submit" class="btn btn-primary">Compare</button>
+        </div>
+
+        <div class="result_mother mt-5 ">
+            <div class="result_tag bg-primary container text-white">
+                <h3>Result</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4 p-3">
+                  The original text
+                  <textarea id="result_original_text" name="result_original_text" rows="10" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
+                </div>
+                <!-- <div class="col-4 p-3">
+                  The text to be compared
+                  <textarea id="result_comp_text" name="address" rows="10" cols="100" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
+                </div> -->
+            </div> 
+        </div>
+    </div>
+  <scrip src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></scrip> 
+  <script src="differ.js"></script> 
+</body>
+</html>
