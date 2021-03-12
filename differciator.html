@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     
 </head>
@@ -13,39 +14,40 @@
             <h2>Diff Comparator</h2>
         </div>
 
-        <div class="row justify-content-center">
+        <form name="myform">
+          <div class="row justify-content-center">
             <div class="col-4 p-3">
               Type the original text here
-              <textarea id="original_text" name="original_text" rows="10" cols="50" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
+              <textarea id="original_text" name="original_text" rows="8" cols="50" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
             </div>
             <div class="col-4 p-3">
               Type the text to be compared
-              <textarea id="comp_text" name="comp_text" rows="10" cols="50" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
+              <textarea id="comp_text" name="comp_text" rows="8" cols="50" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
             </div>
         </div> 
+        </form>
 
         <br>
         <div class="btnn">
-            <button type="button" id="btn_submit" class="btn btn-primary">Compare</button>
+            <button type="button" id="btn_submit" class="btn btn-success">Compare</button>
+            <button id="reset_btn" type="button" onclick="myform.reset(); "  class="btn btn-warning">Reset<i class="fas fa-sync-alt"></i></button>
         </div>
 
-        <div class="result_mother mt-5 ">
-            <div class="result_tag bg-primary container text-white">
+        <div id="result_mother" class="result_mother mt-5 ">
+            <div class="result_tag bg-primary w-25 container text-white">
                 <h3>Result</h3>
             </div>
             <div class="row justify-content-center">
-                <div class="col-4 p-3">
-                  The original text
-                  <textarea id="result_original_text" name="result_original_text" rows="10" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
+                <div class="col-4 p-2">
+                  <p id="result_original_text" name="result_original_text " class="border border-primary" placeholder="Describe yourself here..."></p>
                 </div>
-                <!-- <div class="col-4 p-3">
-                  The text to be compared
-                  <textarea id="result_comp_text" name="address" rows="10" cols="100" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
-                </div> -->
+                <div class="col-4 p-2">
+                  <p id="result_comp_text" name="address" class=" border border-primary" ></p>
+                </div>
             </div> 
         </div>
     </div>
-  <scrip src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></scrip> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="differ.js"></script> 
 </body>
 </html>
