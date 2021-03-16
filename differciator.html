@@ -6,7 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    
+    <style>
+      #result_comp_text em { background-color: rgb(171, 86, 241); }
+      #result_original_text em { background-color: rgb(245, 59, 59); }
+      span{background-color: rgb(67, 218, 67);}
+    </style>
 </head>
 <body>
     <div class="mother  text-center  ">
@@ -18,11 +22,11 @@
           <div class="row justify-content-center">
             <div class="col-4 p-3">
               Type the original text here
-              <textarea id="original_text" name="original_text" rows="8" cols="50" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
+              <textarea id="original_text" name="original_text" rows="8" cols="50" class="form-control" placeholder="Describe yourself here..."></textarea>
             </div>
             <div class="col-4 p-3">
               Type the text to be compared
-              <textarea id="comp_text" name="comp_text" rows="8" cols="50" maxlength="100" class="form-control" placeholder="Describe yourself here..."></textarea>
+              <textarea id="comp_text" name="comp_text" rows="8" cols="50"  class="form-control" placeholder="Describe yourself here..."></textarea>
             </div>
         </div> 
         </form>
